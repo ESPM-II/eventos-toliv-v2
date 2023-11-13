@@ -1,0 +1,16 @@
+.button-hover {
+    transition: all 0.5s !important; /* Aplica la transición a todas las propiedades durante 0.5 segundos */
+    border: 2px solid rgba(0, 191, 255, 0.5);
+    border-radius: 50px !important;
+  }
+  
+  .button-hover:hover {
+    border-color: rgba(0, 191, 255, 1) !important; /* Cambia el color del texto al hacer hover */
+    color: rgba(0, 191, 255, 0.2) !important;
+    font-size: 25px !important; /* Cambia el tamaño del texto al hacer hover */
+    color: #fff !important;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 191, 255, 1), 0 0 20px rgba(0, 191, 255, 1), 0 0 30px rgba(0, 255, 0, 1) !important;
+
+  }
+  
