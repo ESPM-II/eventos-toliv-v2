@@ -73,3 +73,15 @@ body {
   background-color: #f57e39;
   border-radius: 20px;
 }
+
+.navbar input {
+  max-width: 30rem; /* Ajusta el ancho máximo según tus necesidades */
+  margin: 0px auto;
+  padding: 0px;
+  align-items: center; /* Centra el cuadro de búsqueda */
+}
+
+/* Ajusta la posición del menú superior */
+.navbar {
+  margin-bottom: 20px; /* Agrega espacio en la parte inferior del menú */
+}

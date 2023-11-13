@@ -1,4 +1,3 @@
-// CarouselComponent.js
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from 'react-bootstrap';
@@ -75,7 +74,11 @@ const CarouselComponent = ({ events }) => {
             <div style={overlayStyle}></div>
             <Carousel.Caption style={captionStyle}>
               <h3 style={neonTextStyle}>{formatEventTitle(event.name)}</h3>
-              <p style={descriptionStyle}>{event.description}</p>
+              <p style={descriptionStyle}>
+                {event.description && event.description.length > 100
+                  ? `${event.description.substring(0, 500)}...`
+                  : event.description}
+              </p>
               <a href={event.event_url} target="_blank" rel="noopener noreferrer">
                 <button className="button-hover" style={buttonStyle}>
                   Ver más
